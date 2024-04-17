@@ -1,0 +1,21 @@
+//
+// _blog.scss
+//
+
+/*********************************/
+/*         Blog                  */
+/*===============================*/
+
+.blog {
+    @each $name,
+    $value in $colors {
+        &.blog-#{$name} {
+            .title,
+            .link {
+                &:hover {
+                    color: $value !important;
+                }
+            }
+        }
+    }
+}

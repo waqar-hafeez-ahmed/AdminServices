@@ -1,0 +1,33 @@
+//
+// _pricing.scss
+//
+
+/*********************************/
+/*         Pricing               */
+/*===============================*/
+.pricing {
+    @each $name,
+    $value in $colors {
+        &.price-#{$name} {
+            .btn {
+                background-color: rgba($value, 0.1) !important;
+                border: 1px solid rgba($value, 0.1) !important;
+                color: #{$value} !important;
+                box-shadow: 0 3px 5px 0 rgba($value, 0.1);
+                &:hover, &:focus, &:active, &.active, &.focus{
+                    background-color: #{$value} !important;
+                    border-color: #{$value} !important;
+                    color: $white !important;
+                }
+            }
+        }
+    }
+}
+
+.pricing {
+    transition: all 0.5s ease;
+    &:hover {
+        box-shadow: $shadow-md !important;
+        transform: translateY(-10px);
+    }
+}
