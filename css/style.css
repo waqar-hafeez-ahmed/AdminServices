@@ -86,7 +86,7 @@ body,
   }
 }
 .item:nth-child(1) {
-  background: url("/images/bg/1.jpg");
+  background-image: url("../images/bg/1.jpg");
 
   background-size: cover;
   background-position: center center;
@@ -94,14 +94,14 @@ body,
 }
 
 .item:nth-child(2) {
-  background: url("/images/bg/2.jpg");
+  background-image: url("../images/bg/2.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .item:nth-child(3) {
-  background: url("/images/bg/3.jpg");
+  background-image: url("../images/bg/3.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
